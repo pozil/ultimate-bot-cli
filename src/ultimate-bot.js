@@ -35,6 +35,14 @@ class UltimateBot {
         this.megaPi.reset();
     }
 
+    async getMode() {
+        return this.megaPi.getMode();
+    }
+
+    setMode(mode) {
+        this.megaPi.setMode(mode);
+    }
+
     async getEncoderMotorPosition(motor) {
         return this.megaPi.encoderMotorPosition(motor);
     }
