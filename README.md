@@ -21,7 +21,7 @@ $ npm install -g ultimate-bot-cli
 $ bot COMMAND
 running command...
 $ bot (-v|--version|version)
-ultimate-bot-cli/1.0.0 darwin-x64 node-v10.16.3
+ultimate-bot-cli/1.0.2 darwin-x64 node-v10.16.3
 $ bot --help [COMMAND]
 USAGE
   $ bot COMMAND
@@ -33,9 +33,11 @@ USAGE
 
 <!-- commands -->
 * [`bot dc-run`](#bot-dc-run)
-* [`bot enc-get-positions`](#bot-enc-get-positions)
-* [`bot enc-set-position`](#bot-enc-set-position)
+* [`bot enc-get`](#bot-enc-get)
+* [`bot enc-set`](#bot-enc-set)
 * [`bot help [COMMAND]`](#bot-help-command)
+* [`bot mode-get`](#bot-mode-get)
+* [`bot mode-set`](#bot-mode-set)
 * [`bot move`](#bot-move)
 * [`bot reset`](#bot-reset)
 * [`bot rotate`](#bot-rotate)
@@ -55,26 +57,26 @@ OPTIONS
   -s, --speed=speed        [default: 100] Movement speed.
 ```
 
-_See code: [src/commands/dc-run.js](https://github.com/pozil/ultimate-bot-cli/blob/v1.0.0/src/commands/dc-run.js)_
+_See code: [src/commands/dc-run.js](https://github.com/pozil/ultimate-bot-cli/blob/v1.0.2/src/commands/dc-run.js)_
 
-## `bot enc-get-positions`
+## `bot enc-get`
 
 Reads encoder motor positions
 
 ```
 USAGE
-  $ bot enc-get-positions
+  $ bot enc-get
 ```
 
-_See code: [src/commands/enc-get-positions.js](https://github.com/pozil/ultimate-bot-cli/blob/v1.0.0/src/commands/enc-get-positions.js)_
+_See code: [src/commands/enc-get.js](https://github.com/pozil/ultimate-bot-cli/blob/v1.0.2/src/commands/enc-get.js)_
 
-## `bot enc-set-position`
+## `bot enc-set`
 
 Moves an encoder motor to a position
 
 ```
 USAGE
-  $ bot enc-set-position
+  $ bot enc-set
 
 OPTIONS
   -p, --port=port          (required) Encoder motor port
@@ -82,7 +84,7 @@ OPTIONS
   -t, --position=position  (required) Position to move to.
 ```
 
-_See code: [src/commands/enc-set-position.js](https://github.com/pozil/ultimate-bot-cli/blob/v1.0.0/src/commands/enc-set-position.js)_
+_See code: [src/commands/enc-set.js](https://github.com/pozil/ultimate-bot-cli/blob/v1.0.2/src/commands/enc-set.js)_
 
 ## `bot help [COMMAND]`
 
@@ -101,6 +103,31 @@ OPTIONS
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v2.2.1/src/commands/help.ts)_
 
+## `bot mode-get`
+
+Gets the MegaPi mode
+
+```
+USAGE
+  $ bot mode-get
+```
+
+_See code: [src/commands/mode-get.js](https://github.com/pozil/ultimate-bot-cli/blob/v1.0.2/src/commands/mode-get.js)_
+
+## `bot mode-set`
+
+Sets the MegaPi mode
+
+```
+USAGE
+  $ bot mode-set
+
+OPTIONS
+  -m, --mode=mode  New mode: 0 = manual mode, 1 = obstacle avoidance, 2 = balance, 3 = IR remote, 4 = line following
+```
+
+_See code: [src/commands/mode-set.js](https://github.com/pozil/ultimate-bot-cli/blob/v1.0.2/src/commands/mode-set.js)_
+
 ## `bot move`
 
 Move the Ultimate Bot
@@ -114,7 +141,7 @@ OPTIONS
   -s, --speed=speed        [default: 100] Movement speed.
 ```
 
-_See code: [src/commands/move.js](https://github.com/pozil/ultimate-bot-cli/blob/v1.0.0/src/commands/move.js)_
+_See code: [src/commands/move.js](https://github.com/pozil/ultimate-bot-cli/blob/v1.0.2/src/commands/move.js)_
 
 ## `bot reset`
 
@@ -125,7 +152,7 @@ USAGE
   $ bot reset
 ```
 
-_See code: [src/commands/reset.js](https://github.com/pozil/ultimate-bot-cli/blob/v1.0.0/src/commands/reset.js)_
+_See code: [src/commands/reset.js](https://github.com/pozil/ultimate-bot-cli/blob/v1.0.2/src/commands/reset.js)_
 
 ## `bot rotate`
 
@@ -139,7 +166,7 @@ OPTIONS
   -a, --angle=angle  [default: 830] Rotation angle (not a standard unit, 830 is 180 degrees)
 ```
 
-_See code: [src/commands/rotate.js](https://github.com/pozil/ultimate-bot-cli/blob/v1.0.0/src/commands/rotate.js)_
+_See code: [src/commands/rotate.js](https://github.com/pozil/ultimate-bot-cli/blob/v1.0.2/src/commands/rotate.js)_
 
 ## `bot stop`
 
@@ -150,5 +177,5 @@ USAGE
   $ bot stop
 ```
 
-_See code: [src/commands/stop.js](https://github.com/pozil/ultimate-bot-cli/blob/v1.0.0/src/commands/stop.js)_
+_See code: [src/commands/stop.js](https://github.com/pozil/ultimate-bot-cli/blob/v1.0.2/src/commands/stop.js)_
 <!-- commandsstop -->
