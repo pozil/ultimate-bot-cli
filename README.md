@@ -55,7 +55,7 @@ OPTIONS
   -s, --speed=speed        [default: 100] Movement speed.
 ```
 
-_See code: [src/commands/dc-run.js](https://github.com/pozil/utlimate-bot-cli/blob/v1.0.0/src/commands/dc-run.js)_
+_See code: [src/commands/dc-run.js](https://github.com/pozil/ultimate-bot-cli/blob/v1.0.0/src/commands/dc-run.js)_
 
 ## `bot enc-get-positions`
 
@@ -66,7 +66,7 @@ USAGE
   $ bot enc-get-positions
 ```
 
-_See code: [src/commands/enc-get-positions.js](https://github.com/pozil/utlimate-bot-cli/blob/v1.0.0/src/commands/enc-get-positions.js)_
+_See code: [src/commands/enc-get-positions.js](https://github.com/pozil/ultimate-bot-cli/blob/v1.0.0/src/commands/enc-get-positions.js)_
 
 ## `bot enc-set-position`
 
@@ -82,7 +82,7 @@ OPTIONS
   -t, --position=position  (required) Position to move to.
 ```
 
-_See code: [src/commands/enc-set-position.js](https://github.com/pozil/utlimate-bot-cli/blob/v1.0.0/src/commands/enc-set-position.js)_
+_See code: [src/commands/enc-set-position.js](https://github.com/pozil/ultimate-bot-cli/blob/v1.0.0/src/commands/enc-set-position.js)_
 
 ## `bot help [COMMAND]`
 
@@ -114,7 +114,7 @@ OPTIONS
   -s, --speed=speed        [default: 100] Movement speed.
 ```
 
-_See code: [src/commands/move.js](https://github.com/pozil/utlimate-bot-cli/blob/v1.0.0/src/commands/move.js)_
+_See code: [src/commands/move.js](https://github.com/pozil/ultimate-bot-cli/blob/v1.0.0/src/commands/move.js)_
 
 ## `bot reset`
 
@@ -125,7 +125,7 @@ USAGE
   $ bot reset
 ```
 
-_See code: [src/commands/reset.js](https://github.com/pozil/utlimate-bot-cli/blob/v1.0.0/src/commands/reset.js)_
+_See code: [src/commands/reset.js](https://github.com/pozil/ultimate-bot-cli/blob/v1.0.0/src/commands/reset.js)_
 
 ## `bot rotate`
 
@@ -139,7 +139,7 @@ OPTIONS
   -a, --angle=angle  [default: 830] Rotation angle (not a standard unit, 830 is 180 degrees)
 ```
 
-_See code: [src/commands/rotate.js](https://github.com/pozil/utlimate-bot-cli/blob/v1.0.0/src/commands/rotate.js)_
+_See code: [src/commands/rotate.js](https://github.com/pozil/ultimate-bot-cli/blob/v1.0.0/src/commands/rotate.js)_
 
 ## `bot stop`
 
@@ -150,5 +150,5 @@ USAGE
   $ bot stop
 ```
 
-_See code: [src/commands/stop.js](https://github.com/pozil/utlimate-bot-cli/blob/v1.0.0/src/commands/stop.js)_
+_See code: [src/commands/stop.js](https://github.com/pozil/ultimate-bot-cli/blob/v1.0.0/src/commands/stop.js)_
 <!-- commandsstop -->
