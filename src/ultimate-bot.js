@@ -43,6 +43,10 @@ class UltimateBot {
         this.megaPi.setMode(mode);
     }
 
+    async ultrasonicSensorRead(port) {
+        return this.megaPi.ultrasonicSensorRead(port);
+    }
+
     async getEncoderMotorPosition(motor) {
         return this.megaPi.encoderMotorPosition(motor);
     }

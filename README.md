@@ -42,6 +42,7 @@ USAGE
 * [`bot reset`](#bot-reset)
 * [`bot rotate`](#bot-rotate)
 * [`bot stop`](#bot-stop)
+* [`bot ultrasonic`](#bot-ultrasonic)
 
 ## `bot dc-run`
 
@@ -178,4 +179,18 @@ USAGE
 ```
 
 _See code: [src/commands/stop.js](https://github.com/pozil/ultimate-bot-cli/blob/v1.0.2/src/commands/stop.js)_
+
+## `bot ultrasonic`
+
+Reads the ultrasonic sensor and returns a distance
+
+```
+USAGE
+  $ bot ultrasonic
+
+OPTIONS
+  -p, --port=port  (required) Port
+```
+
+_See code: [src/commands/ultrasonic.js](https://github.com/pozil/ultimate-bot-cli/blob/v1.0.2/src/commands/ultrasonic.js)_
 <!-- commandsstop -->
