@@ -1,0 +1,54 @@
+{
+    "name": "utlimate-bot-cli",
+    "description": "CLI that interacts with the Makeblock Ultimate 2.0 Bot via MegaPi",
+    "version": "1.0.0",
+    "author": "Philippe Ozil @pozil",
+    "bin": {
+        "bot": "./bin/run"
+    },
+    "bugs": "https://github.com/pozil/utlimate-bot-cli/issues",
+    "dependencies": {
+        "@oclif/command": "^1.5.19",
+        "@oclif/config": "^1.13.3",
+        "@oclif/plugin-help": "^2.2.1",
+        "cli-ux": "^5.3.3",
+        "megapi-node-client": "^2.0.2"
+    },
+    "devDependencies": {
+        "@oclif/dev-cli": "^1.22.2",
+        "eslint": "^6.6.0",
+        "globby": "^10.0.1",
+        "prettier": "^1.18.2"
+    },
+    "engines": {
+        "node": ">=8.0.0"
+    },
+    "files": [
+        "/bin",
+        "/npm-shrinkwrap.json",
+        "/oclif.manifest.json",
+        "/src"
+    ],
+    "homepage": "https://github.com/pozil/utlimate-bot-cli",
+    "keywords": [
+        "oclif"
+    ],
+    "license": "CC0-1.0",
+    "main": "src/index.js",
+    "oclif": {
+        "commands": "./src/commands",
+        "bin": "bot",
+        "plugins": [
+            "@oclif/plugin-help"
+        ]
+    },
+    "repository": "pozil/utlimate-bot-cli",
+    "scripts": {
+        "prettier": "prettier --write '**/*.{js,json,md}'",
+        "postpack": "rm -f oclif.manifest.json",
+        "posttest": "eslint .",
+        "prepack": "oclif-dev manifest && oclif-dev readme",
+        "test": "echo NO TESTS",
+        "version": "oclif-dev readme && git add README.md"
+    }
+}
