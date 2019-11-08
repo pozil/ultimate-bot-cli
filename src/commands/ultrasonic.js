@@ -8,7 +8,9 @@ class UltrasonicReadCommand extends Command {
 
         const bot = await getUltimateBot();
         const distance = await bot.ultrasonicSensorRead(port);
-        this.log(`Distance: ${distance} cm`);
+        this.log(
+            `Ultrasonic sensor read: port=${port}, distance=${distance}cm`
+        );
         await bot.disconnect();
     }
 }
