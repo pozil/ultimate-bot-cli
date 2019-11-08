@@ -1,12 +1,12 @@
 {
-    "name": "utlimate-bot-cli",
+    "name": "ultimate-bot-cli",
     "description": "CLI that interacts with the Makeblock Ultimate 2.0 Bot via MegaPi",
     "version": "1.0.0",
     "author": "Philippe Ozil @pozil",
     "bin": {
         "bot": "./bin/run"
     },
-    "bugs": "https://github.com/pozil/utlimate-bot-cli/issues",
+    "bugs": "https://github.com/pozil/ultimate-bot-cli/issues",
     "dependencies": {
         "@oclif/command": "^1.5.19",
         "@oclif/config": "^1.13.3",
@@ -29,7 +29,7 @@
         "/oclif.manifest.json",
         "/src"
     ],
-    "homepage": "https://github.com/pozil/utlimate-bot-cli",
+    "homepage": "https://github.com/pozil/ultimate-bot-cli",
     "keywords": [
         "oclif"
     ],
@@ -42,7 +42,7 @@
             "@oclif/plugin-help"
         ]
     },
-    "repository": "pozil/utlimate-bot-cli",
+    "repository": "pozil/ultimate-bot-cli",
     "scripts": {
         "prettier": "prettier --write '**/*.{js,json,md}'",
         "postpack": "rm -f oclif.manifest.json",
