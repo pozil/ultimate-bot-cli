@@ -36,8 +36,8 @@ USAGE
 * [`bot enc-get`](#bot-enc-get)
 * [`bot enc-set`](#bot-enc-set)
 * [`bot help [COMMAND]`](#bot-help-command)
-* [`bot mode-get`](#bot-mode-get)
-* [`bot mode-set`](#bot-mode-set)
+* [`bot mode`](#bot-mode)
+* [`bot mode-speed`](#bot-mode-speed)
 * [`bot move`](#bot-move)
 * [`bot reset`](#bot-reset)
 * [`bot rotate`](#bot-rotate)
@@ -104,30 +104,34 @@ OPTIONS
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v2.2.1/src/commands/help.ts)_
 
-## `bot mode-get`
+## `bot mode`
 
-Gets the MegaPi mode
-
-```
-USAGE
-  $ bot mode-get
-```
-
-_See code: [src/commands/mode-get.js](https://github.com/pozil/ultimate-bot-cli/blob/v1.0.2/src/commands/mode-get.js)_
-
-## `bot mode-set`
-
-Sets the MegaPi mode
+Gets or sets the MegaPi mode
 
 ```
 USAGE
-  $ bot mode-set
+  $ bot mode
 
 OPTIONS
-  -m, --mode=mode  New mode: 0 = manual mode, 1 = obstacle avoidance, 2 = balance, 3 = IR remote, 4 = line following
+  -m, --mode=0|1|2|3|4  New mode: 0 = manual mode, 1 = obstacle avoidance, 2 = balance, 3 = IR remote, 4 = line
+                        following
 ```
 
-_See code: [src/commands/mode-set.js](https://github.com/pozil/ultimate-bot-cli/blob/v1.0.2/src/commands/mode-set.js)_
+_See code: [src/commands/mode.js](https://github.com/pozil/ultimate-bot-cli/blob/v1.0.2/src/commands/mode.js)_
+
+## `bot mode-speed`
+
+Gets or sets the move speed for the following modes: obstacle avoidance, line following
+
+```
+USAGE
+  $ bot mode-speed
+
+OPTIONS
+  -s, --speed=speed  New speed
+```
+
+_See code: [src/commands/mode-speed.js](https://github.com/pozil/ultimate-bot-cli/blob/v1.0.2/src/commands/mode-speed.js)_
 
 ## `bot move`
 

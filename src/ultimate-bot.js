@@ -43,6 +43,14 @@ class UltimateBot {
         this.megaPi.setMode(mode);
     }
 
+    async getModeMoveSpeed() {
+        return this.megaPi.getModeMoveSpeed();
+    }
+
+    setModeMoveSpeed(speed) {
+        this.megaPi.setModeMoveSpeed(speed);
+    }
+
     async ultrasonicSensorRead(port) {
         return this.megaPi.ultrasonicSensorRead(port);
     }
