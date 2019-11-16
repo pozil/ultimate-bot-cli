@@ -1,7 +1,7 @@
 {
     "name": "ultimate-bot-cli",
     "description": "CLI that interacts with the Makeblock Ultimate 2.0 Bot via MegaPi",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "author": "Philippe Ozil @pozil",
     "bin": {
         "bot": "./bin/run"
