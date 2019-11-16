@@ -26,8 +26,8 @@ ModeSetCommand.flags = {
     mode: flags.integer({
         char: 'm',
         description:
-            'New mode: 0 = manual mode, 1 = obstacle avoidance, 2 = balance, 3 = IR remote, 4 = line following',
-        options: ['0', '1', '2', '3', '4']
+            'New mode: 0 = manual mode, 1 = obstacle avoidance, 2 = balance, 3 = IR remote, 4 = line following 6 = arm reset*',
+        options: ['0', '1', '2', '3', '4', '6']
     })
 };
 

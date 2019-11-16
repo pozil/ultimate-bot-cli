@@ -55,6 +55,10 @@ class UltimateBot {
         return this.megaPi.ultrasonicSensorRead(port);
     }
 
+    lineFollowerRead(port) {
+        return this.megaPi.lineFollowerRead(port);
+    }
+
     async getEncoderMotorPosition(motor) {
         return this.megaPi.encoderMotorPosition(motor);
     }
@@ -78,13 +82,14 @@ class UltimateBot {
     }
 
     async getEncoderMotorPositions() {
-        const pos = {};
-        pos.trackRight = await this.megaPi.encoderMotorPosition(
+        const trackRight = await this.megaPi.encoderMotorPosition(
             PORT_TRACK_RIGHT
         );
-        pos.trackLeft = await this.megaPi.encoderMotorPosition(PORT_TRACK_LEFT);
-        pos.arm = await this.megaPi.encoderMotorPosition(PORT_ARM);
-        return pos;
+        const trackLeft = await this.megaPi.encoderMotorPosition(
+            PORT_TRACK_LEFT
+        );
+        const arm = await this.megaPi.encoderMotorPosition(PORT_ARM);
+        return { trackRight, trackLeft, arm };
     }
 
     async runDcMotor(port, speed, duration) {

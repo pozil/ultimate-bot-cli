@@ -8,14 +8,16 @@ CLI that interacts with the Makeblock Ultimate 2.0 Bot via MegaPi
 [![License](https://img.shields.io/npm/l/ultimate-bot-cli.svg)](https://github.com/pozil/ultimate-bot-cli/blob/master/package.json)
 
 <!-- toc -->
-* [ultimate-bot-cli](#ultimate-bot-cli)
-* [Usage](#usage)
-* [Commands](#commands)
-<!-- tocstop -->
+
+-   [ultimate-bot-cli](#ultimate-bot-cli)
+-   [Usage](#usage)
+-   [Commands](#commands)
+    <!-- tocstop -->
 
 # Usage
 
 <!-- usage -->
+
 ```sh-session
 $ npm install -g ultimate-bot-cli
 $ bot COMMAND
@@ -27,22 +29,24 @@ USAGE
   $ bot COMMAND
 ...
 ```
+
 <!-- usagestop -->
 
 # Commands
 
 <!-- commands -->
-* [`bot dc-run`](#bot-dc-run)
-* [`bot enc-get`](#bot-enc-get)
-* [`bot enc-set`](#bot-enc-set)
-* [`bot help [COMMAND]`](#bot-help-command)
-* [`bot mode`](#bot-mode)
-* [`bot mode-speed`](#bot-mode-speed)
-* [`bot move`](#bot-move)
-* [`bot reset`](#bot-reset)
-* [`bot rotate`](#bot-rotate)
-* [`bot stop`](#bot-stop)
-* [`bot ultrasonic`](#bot-ultrasonic)
+
+-   [`bot dc-run`](#bot-dc-run)
+-   [`bot enc-get`](#bot-enc-get)
+-   [`bot enc-set`](#bot-enc-set)
+-   [`bot help [COMMAND]`](#bot-help-command)
+-   [`bot mode`](#bot-mode)
+-   [`bot mode-speed`](#bot-mode-speed)
+-   [`bot move`](#bot-move)
+-   [`bot reset`](#bot-reset)
+-   [`bot rotate`](#bot-rotate)
+-   [`bot stop`](#bot-stop)
+-   [`bot ultrasonic`](#bot-ultrasonic)
 
 ## `bot dc-run`
 
@@ -197,4 +201,5 @@ OPTIONS
 ```
 
 _See code: [src/commands/ultrasonic.js](https://github.com/pozil/ultimate-bot-cli/blob/v1.0.2/src/commands/ultrasonic.js)_
+
 <!-- commandsstop -->
